@@ -1,0 +1,6 @@
+{
+  "name": "OKIOAI Technologies",
+  "description": "Discover OKIOAI Technologies, a technology company building innovative mobile applications, AI-powered tools and digital products to simplify everyday life.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

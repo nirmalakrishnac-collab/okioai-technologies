@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: "DM Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-obsidian: #05070B;
+  --color-charcoal: #0B0F17;
+  --color-surface: #101622;
+  --color-electric: #1D6FFF;
+  --color-cyan: #06B6D4;
+}
+
+@layer base {
+  html {
+    background-color: #05070B;
+    color: #F1F5F9;
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.hairline-border {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.hairline-border-strong {
+  border-color: rgba(255, 255, 255, 0.14);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #05070b inset;
+  -webkit-text-fill-color: #f8fafc;
+  caret-color: #f8fafc;
+  transition: background-color 5000s ease-in-out 0s;
+}
